@@ -7,8 +7,8 @@ gem 'rails', '4.0.1'
 #gem 'sqlite3'
 
 # MongoID
-gem "mongoid"
-gem "bson_ext"
+gem 'mongoid', github: 'mongoid/mongoid', branch: 'master'
+# gem "bson_ext"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
