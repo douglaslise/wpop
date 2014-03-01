@@ -4,3 +4,9 @@ development:
       database: mongoid
       hosts:
         - 192.168.0.122:27017
+production:
+  sessions:
+    default:
+      database: mongoid
+      hosts:
+        - 192.168.0.122:27017
