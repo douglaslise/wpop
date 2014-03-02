@@ -1,13 +1,10 @@
 <h1>Mensagens</h1>
 
-<ul>
-  <% @messages.each do |m| %>
-  	<li>
-      <%= m.title %>
-      <small><%= l(m.date, format: :short) if m.date %></small>
-    </li>
-  <% end %>
+<ul id="messages">
+  <%= render @messages %>
 </ul>
+
+<%= link_to "Atualizar", messages_path, remote: true, id: 'update-messages' %>
 
 <%= form_for(Message.new) do |f| %>
   <div>
