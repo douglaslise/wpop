@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Mongo::Application.config.secret_key_base = '4d6a89959ecb724658803fd1c1b23ede0cb9eef322cff31eb89db654ba9c92c9f29471a569c8da32939bb87beeb6b1f4c8f3b1d957955a414069e4441944fb53'
+Wpop::Application.config.secret_key_base = '4d6a89959ecb724658803fd1c1b23ede0cb9eef322cff31eb89db654ba9c92c9f29471a569c8da32939bb87beeb6b1f4c8f3b1d957955a414069e4441944fb53'

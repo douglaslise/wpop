@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Mongo::Application.load_tasks
+Wpop::Application.load_tasks
