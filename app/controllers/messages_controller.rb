@@ -15,10 +15,14 @@ class MessagesController < ApplicationController
     end
 
     if @message.save
-      redirect_to messages_path
+      redirect_to message_url(@message)
     else
       render text: "Erro: #{@message.erros.full_messages}"
     end
+  end
+
+  def show
+    @message = Message.find(params[:id])
   end
 
 end

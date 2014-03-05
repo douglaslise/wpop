@@ -6,7 +6,7 @@ Wpop::Application.routes.draw do
     resources :members
   end
 
-  resources :messages, only: [:index, :create]
+  resources :messages, only: [:index, :create, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
