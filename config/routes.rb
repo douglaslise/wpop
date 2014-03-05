@@ -1,5 +1,12 @@
-Mongo::Application.routes.draw do
-  resources :messages
+Wpop::Application.routes.draw do
+
+  resources :users
+
+  resources :groups do
+    resources :members
+  end
+
+  resources :messages, only: [:index, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
